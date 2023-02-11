@@ -1,9 +1,12 @@
 import { GraphQLClient, gql } from 'graphql-request'
 import { format } from 'date-fns'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export default async function Home() {
-  const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT)
+  const graphcms = new GraphQLClient(
+    `${process.env.NEXT_PUBLIC_GRAPHQL_URL_ENDPOINT}`,
+  )
 
   const end = format(Date.now(), "yyyy-MM-dd'T'15:00:00+00:00")
   const query = gql`
@@ -56,10 +59,12 @@ export default async function Home() {
       <Header />
       <div>
         <h3>teste</h3>
-        {data.plantoes.map((plantao) => {
+        {data.plantoes.map((plantao: any) => {
           return <h1 key={plantao.id}>{plantao.farmacias.name}</h1>
         })}
       </div>
+
+      <Footer />
     </>
   )
 }
