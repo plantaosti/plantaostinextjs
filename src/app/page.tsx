@@ -3,6 +3,7 @@ import { format } from 'date-fns'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Newsletter } from '@/components/News'
+import { Produto } from '@/components/Produto'
 
 export default async function Home() {
   const graphcms = new GraphQLClient(
@@ -64,6 +65,7 @@ export default async function Home() {
           return <h1 key={plantao.id}>{plantao.farmacias.name}</h1>
         })}
       </div>
+      <Produto />
       <Newsletter />
       <Footer />
     </>

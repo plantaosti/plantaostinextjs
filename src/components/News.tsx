@@ -1,23 +1,23 @@
 export function Newsletter() {
   return (
-    <section className="flex flex-col w-full bg-green-600 py-8 px-6 md:bg-node lg:px-6">
-      <div className="mg:bg-green-600">
-        <div className="flex justify-center max-w-5xl m-auto pb8">
-          <h2 className="text-xl font-bold text-white lg:text-3xl dark:text-gray-600">
+    <section className="flex flex-col w-full bg-green-600 py-10 px-6 md:bg-node lg:px-6">
+      <div className="mg:bg-green-600 py-10">
+        <div className="flex justify-center max-w-5xl m-auto pb-8">
+          <h2 className="text-3xl font-bold text-white lg:text-3xl dark:text-gray-600">
             Newsletter
           </h2>
         </div>
 
         <div className="flex flex-col justify-center items-center gap-7 max-w-5xl m-auto md:flex-row">
           <div className="flex flex-col text-white max-w-sm gap-3 dark:text-gray-600">
-            <p className="text-sm md:text-lg">
+            <p className="text-md md:text-lg">
               Se você reside em Santa Terezinha de Itaipu e está cansado de
               percorrer toda a cidade em busca da farmácia de plantão da semana,
               tenho uma boa notícia para você. Aqui, disponibilizamos todas as
               informações de que você precisa para encontrar facilmente a
               farmácia de plantão da semana.
             </p>
-            <p className="text-sm md:text-lg">
+            <p className="text-md md:text-lg">
               Você também pode se inscrever em nossa newsletter e receber essas
               informações por e-mail!
             </p>

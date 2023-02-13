@@ -5,7 +5,7 @@ import { Logo } from './Logo'
 
 export function Footer() {
   return (
-    <footer className="flexl flex-col w-full bg-gray-100 text-center pt-8">
+    <footer className="flexl flex-col items-center w-full bg-gray-100 text-center py-10 pt-8">
       <div className="flex flex-row gap-3 justify-center mb-6">
         <Link href={'/#home'} className="flex items-center gap-2 group">
           <Logo className="w-[1.5rem] fill-gray-700 dark:fill-gray-400 group-hover:fill-gray-400 transition-all duration-300" />
@@ -85,6 +85,17 @@ export function Footer() {
                 Notícias
               </Link>
             </li>
+          </ul>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <h3 className="text-lg font-bold text-left text-green-600 lg:text-xl dark:text-gray-600">
+            Mais informações
+          </h3>
+
+          <ul className="text-sm text-left text-gray-700">
+            <li>Santa Terezinha de Itaipu - PR</li>
+            <li>85875-000</li>
           </ul>
         </div>
 
