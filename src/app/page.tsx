@@ -2,6 +2,7 @@ import { GraphQLClient, gql } from 'graphql-request'
 import { format } from 'date-fns'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { Newsletter } from '@/components/News'
 
 export default async function Home() {
   const graphcms = new GraphQLClient(
@@ -63,7 +64,7 @@ export default async function Home() {
           return <h1 key={plantao.id}>{plantao.farmacias.name}</h1>
         })}
       </div>
-
+      <Newsletter />
       <Footer />
     </>
   )
