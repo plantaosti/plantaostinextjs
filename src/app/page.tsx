@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { Newsletter } from '@/components/News'
 import { Produto } from '@/components/Produto'
 import { Noticias } from '@/components/Notiticias'
+import { Apoiadores } from '@/components/Apoiadores'
 
 export default async function Home() {
   const graphcms = new GraphQLClient(
@@ -66,6 +67,7 @@ export default async function Home() {
           return <h1 key={plantao.id}>{plantao.farmacias.name}</h1>
         })}
       </div>
+      <Apoiadores apoiadores={data?.apoiadores} />
       <Noticias posts={data?.posts} />
       <Produto />
       <Newsletter />
