@@ -15,7 +15,7 @@ export function Produto() {
             uso e configurações para otimizar seu desempenho.
           </p>
 
-          <ul className="grid grid-cols-2 gap-4 my-4">
+          <ul className="grid grid-cols-2 gap-4 mt-10">
             <li className="text-left pb-4">
               <div className="before:content-[''] before:w-[33px] before:h-[33px] before:opacity-[0.2] before:left-[7px] before:bottom-[-5px] before:block before:absolute before:rounded-[50%] before:bg-green-500 relative mb-4">
                 <Gear size={32} />
