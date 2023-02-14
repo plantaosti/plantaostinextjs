@@ -2,19 +2,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Eye } from 'phosphor-react'
+import { GetPostsQueryQuery } from 'graphql/generated' 
 
-interface IPosts {
-  posts: INoticias[]
-}
-interface INoticias {
-  id: string
-  slug: string
-  views: string
-  thumbnail: { url: string }
-  title: string
-}
-
-export function Noticias({ posts }: IPosts) {
+export function Noticias({ posts }: GetPostsQueryQuery) {
   return (
     <section className="flex flex-col max-w-full m-auto pt-6 px-4">
       <div className="flex flex-col text-center justify-center max-w-4xl m-auto pb-5">
