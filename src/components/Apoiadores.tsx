@@ -1,14 +1,14 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 interface IApoiadores {
-  apoiadores: IApoiador[]
+  apoiadores: IApoiador[];
 }
 interface IApoiador {
-  id: string
-  ativo: boolean
-  name: string
-  slug: string
-  url: string
+  id: string;
+  ativo: boolean;
+  name: string;
+  slug: string;
+  url: string;
 }
 export function Apoiadores({ apoiadores }: IApoiadores) {
   if (!apoiadores) {
@@ -27,7 +27,7 @@ export function Apoiadores({ apoiadores }: IApoiadores) {
           </span>
         </div>
       </section>
-    )
+    );
   }
   return (
     <section
@@ -60,9 +60,9 @@ export function Apoiadores({ apoiadores }: IApoiadores) {
                 apoiador.name
               )}
             </li>
-          )
+          );
         })}
       </ul>
     </section>
-  )
+  );
 }

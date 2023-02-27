@@ -10,14 +10,14 @@ export function Newsletter() {
 
         <div className="flex flex-col justify-center items-center gap-7 max-w-5xl m-auto md:flex-row">
           <div className="flex flex-col text-white max-w-sm gap-3 dark:text-gray-600">
-            <p className="text-md md:text-lg">
+            <p className="text-sm">
               Se você reside em Santa Terezinha de Itaipu e está cansado de
               percorrer toda a cidade em busca da farmácia de plantão da semana,
               tenho uma boa notícia para você. Aqui, disponibilizamos todas as
               informações de que você precisa para encontrar facilmente a
               farmácia de plantão da semana.
             </p>
-            <p className="text-md md:text-lg">
+            <p className="text-sm">
               Você também pode se inscrever em nossa newsletter e receber essas
               informações por e-mail!
             </p>
@@ -44,5 +44,5 @@ export function Newsletter() {
         </div>
       </div>
     </section>
-  )
+  );
 }
